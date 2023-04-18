@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dejanVportfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,1000;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Sass/main.scss" />
+    <script type="module" src="./src/script.js"></script>
+    <script type="module" src="./src/scriptSlider.js"></script>
+    <script type="module" src="./src/scriptSlideMobile.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <span class="logo__name">VladDejan</span>
+        </div>
+        <nav class="nav__bar">
+          <ul class="nav__list">
+            <li>
+              <a href="#aboutme" class="nav__item"><span>about me</span></a>
+            </li>
+            <li>
+              <a href="#myskills" class="nav__item"><span>my skills</span></a>
+            </li>
+            <li>
+              <a href="#myproject" class="nav__item"><span>my project</span></a>
+            </li>
+          </ul>
+          <div id="menu__toggle" class="menu__toggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <figure class="content__img">
+          <img src="./Images/img-content.png" alt="img1" />
+          <div class="content__publisher">
+            <p>
+              i'm <br />
+              <span class="sep__letters">Dejan</span>
+              <span class="sep__letters">Vlad</span>imirov <br />
+              front-end developer
+            </p>
+          </div>
+        </figure>
+        <div class="content__arrow scroll-to">
+          <a href="#aboutme">
+            <img src="./Images/Arrow.png" alt="arrow" />
+          </a>
+        </div>
+      </div>
+      <div class="side__list">
+        <ul class="side__list--socmedia">
+          <li>
+            <a href="https://github.com/vladDejan"
+              ><img src="./Images/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/vlad_dejan/"
+              ><img src="./Images/instagram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/vlad_dejan"
+              ><img src="./Images/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./Images/linkedin.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="aboutme" class="content2">
+      <div class="content2__main">
+        <figure class="content2__img">
+          <img src="./Images/Novi Sad.jpg" alt="novisad.img" />
+        </figure>
+
+        <article class="content2__about">
+          <h3 class="title">a little more about me</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <div class="button__arrow">
+            <button class="button__arrow--sand">Contact me</button>
+          </div>
+        </article>
+        <div class="content__arrow scroll-to">
+          <a href="#myskills">
+            <img src="./Images/Arrow.png" alt="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="myskills" class="content3">
+      <section class="skills">
+        <h2 class="skills__title">What are my skills?</h2>
+        <div class="skills__box">
+          <div class="skills__list">
+            <button class="skills__btn clicked" tabindex="0">
+              <span>html</span>
+            </button>
+            <button class="skills__btn" tabindex="1"><span>sass</span></button>
+            <button class="skills__btn" tabindex="2">
+              <span>java_script</span>
+            </button>
+            <button class="skills__btn" tabindex="3"><span>figma</span></button>
+            <button class="skills__btn" tabindex="4">
+              <span>node.js</span>
+            </button>
+          </div>
+          <div class="skills__description">
+            <div class="skills__inner" data-target="0" tabindex="0">
+              <h3 class="skills__title">Manipualtion of elements</h3>
+              <p class="range">about 2 years</p>
+              <ul>
+                <li>
+                  I use semantic <span>html</span>, so that every code is in
+                  place and easy to read
+                </li>
+                <li>
+                  Worked on about 16 different sites like portfolio, shopping
+                  apps, private businesses and so on
+                </li>
+              </ul>
+            </div>
+            <div class="skills__inner" data-target="1" tabindex="1">
+              <h3 class="skills__title">Styling of the page elements</h3>
+              <p class="range">about 3 years</p>
+              <ul>
+                <li>
+                  I use <span>css</span> through the sass compiler where i
+                  create different methods depending on what part of the page
+                  i'm working on
+                </li>
+                <li>
+                  I use various tools such as transform properties, pseudo
+                  classes, animations...
+                </li>
+                <li>
+                  Regarding the setting of the elements itself, I like to force
+                  the grid property for a larger number of elements, and flex
+                  for a smaller number of elements. I certainly do well with
+                  other properties and positioning
+                </li>
+              </ul>
+            </div>
+            <div class="skills__inner" data-target="2" tabindex="2">
+              <h3 class="skills__title">Elements logic</h3>
+              <p class="range">about 4 years</p>
+              <ul>
+                <li>
+                  I am based on raw <span>javascript</span>. I've been working a
+                  lot with primitive javascript code
+                </li>
+                <li>
+                  I used for loops, if expressions, different functions
+                  depending on what is required at the moment. I accessed and
+                  created arrays, objects and manipulated them through various
+                  methods and functions characteristic of them
+                </li>
+                <li>
+                  In addition to primitive code, I also used object programming
+                  to create a slightly more complex application where I had a
+                  large number of classes and subclasses, their constructors and
+                  methods
+                </li>
+              </ul>
+            </div>
+            <div class="skills__inner" data-target="3" tabindex="3">
+              <h3 class="skills__title">Web page and application design</h3>
+              <p class="range">about 2 years</p>
+              <ul>
+                <li>
+                  I was making some basic materials in <span>figma</span> that I
+                  worked with later. I worked on the design of complete web
+                  pages as well as on the cutting of individual articles for
+                  later use
+                </li>
+                <li>
+                  Worked on about 16 different sites like portfolio, shopping
+                  apps, private businesses and so on
+                </li>
+              </ul>
+            </div>
+            <div class="skills__inner" data-target="4" tabindex="4">
+              <h3 class="skills__title">Product servicing</h3>
+              <p class="range">about 1 years</p>
+              <ul>
+                <li>
+                  I used Parcel compilers, pulling a certain part of the
+                  database
+                </li>
+                <li>
+                  I put asynchronous functions in the places where it was
+                  necessary to do it
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content__arrow">
+        <a href="#myproject">
+          <img src="./Images/Arrow.png" alt="arrow" />
+        </a>
+      </div>
+    </div>
+    <div id="myproject" class="content4">
+      <div class="white__space"></div>
+      <section class="projects">
+        <div class="projects__content">
+          <p class="projects__subtitle">project with javascript logic</p>
+          <h4 class="projects__title">app shopping cart</h4>
+          <div class="projects__description">
+            <p>
+              This project is made with js logic in oop with a lot of classes
+              and subclasses that make this code quite big but clear. Still need
+              to work on styling...
+            </p>
+          </div>
+        </div>
+        <div class="projects__img slider">
+          <h3 class="projects__header">some of my projects</h3>
+          <div class="slide slide--1">
+            <img src="./Images/appfando.jpg" alt="app-image" />
+          </div>
+          <div class="slide slide--2">
+            <img src="./Images/appfando1.jpg" alt="app-image" />
+          </div>
+        </div>
+      </section>
+      <div class="dots"></div>
+    </div>
+  </body>
+</html>
